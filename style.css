@@ -1,0 +1,235 @@
+:root {
+  --Gradient--color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+
+  --Font-Family: "Raleway", sans-serif;
+  --Font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background: url(./images/bg-mobile.png) no-repeat center center/cover;
+  padding: 8em 0;
+}
+
+/* Utilities */
+
+.primary-text {
+  font-weight: 700;
+  color: #fff;
+}
+
+.secondary-text {
+  font-weight: 900;
+  font-size: 2rem;
+  padding-right: 0.4rem;
+}
+
+.box {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 300px;
+  padding: 2em;
+}
+
+.box-1 {
+  background: var(--dark-blue);
+  margin-bottom: 1em;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.icon__header {
+  width: 50%;
+  margin-bottom: 2em;
+}
+
+.icons__dir {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  background: var(--Very-Dark-Blue);
+  padding: 0.8em;
+  margin-right: 0.9em;
+  border-radius: 10px;
+}
+
+.box-2 {
+  background: var(--dark-blue);
+  border-radius: 10px;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.box-2 > p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1.1rem;
+  background-color: hsla(229, 57%, 11%, 0.733);
+  border-radius: 100px;
+  position: relative;
+}
+
+.horizontal-line::after {
+  position: absolute;
+  content: "";
+  top: 2.6px;
+  left: 2.9px;
+  width: 80%;
+  height: 12px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 100px;
+}
+
+.circle-design {
+  width: 4%;
+  height: 0.8rem;
+  background-color: #fff;
+  border-radius: 100px;
+  position: absolute;
+  content: "";
+  top: 4rem;
+  left: 13.4rem;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.3em;
+  font-size: 0.75rem;
+}
+
+.float-box {
+  width: 50%;
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  top: 7rem;
+  left: 70px;
+}
+
+footer > p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 7rem;
+}
+
+@media (min-width: 900px) {
+  body {
+    background: var(--Very-Dark-Blue);
+    position: relative;
+    overflow: hidden;
+  }
+  body ::before {
+    position: absolute;
+    content: "";
+    top: 15rem;
+    left: 0.2rem;
+    width: 100%;
+    height: 52%;
+    background: url(./images/bg-desktop.png) no-repeat center center/cover;
+    z-index: -1;
+  }
+  .secondary-text {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-right: 0.4rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .box {
+    max-width: 350px;
+    margin-right: 1.6rem;
+  }
+
+  .box-2 {
+    max-width: 1200px;
+  }
+
+  .float-box {
+    width: 24%;
+    background: #fff;
+    color: #000;
+    padding: 0.9em;
+    font-size: 0.5rem;
+    font-weight: 400;
+    border-radius: 10px 10px 0 10px;
+    position: absolute;
+    content: "";
+    top: -0.1rem;
+    left: 16.5rem;
+  }
+
+  .float-box2 {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 0 0 0 40px;
+    position: absolute;
+    content: "";
+    top: 2.5rem;
+    left: 21.5rem;
+  }
+  .float-box3 {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--dark-blue);
+    border-radius: 0 100px 0 0;
+    position: absolute;
+    content: "";
+    top: 2.54rem;
+    left: 21.5rem;
+  }
+
+  .circle-design {
+    width: 3%;
+    position: absolute;
+    left: 18.2rem;
+  }
+}
+
+/* 
+width: 3%;
+  height: 0.8rem;
+  background-color: #fff;
+  border-radius: 100px;
+  position: absolute;
+  content: "";
+  top: 4rem;
+  left: 18.4rem; */
