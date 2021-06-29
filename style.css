@@ -1,15 +1,14 @@
 :root {
   --Gradient--color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
-
   --Pale-Blue: hsl(243, 100%, 93%);
   --Grayish-Blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --Very-Dark-Blue: hsl(229, 57%, 11%);
-
   --Font-Family: "Raleway", sans-serif;
   --Font-size: 14px;
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +39,7 @@ body {
   transition: 0.4s;
 }
 
+/* Main  */
 .box {
   margin: 0 auto;
   width: 80%;
@@ -151,13 +151,15 @@ body {
   left: 70px;
 }
 
+/* Footer */
+
 footer > p {
   width: 80%;
   text-align: center;
   margin: 0 auto;
   padding: 7rem;
 }
-
+/* Desktop responsive */
 @media (min-width: 900px) {
   body {
     background: var(--Very-Dark-Blue);
@@ -237,13 +239,3 @@ footer > p {
     left: 18.2rem;
   }
 }
-
-/* 
-width: 3%;
-  height: 0.8rem;
-  background-color: #fff;
-  border-radius: 100px;
-  position: absolute;
-  content: "";
-  top: 4rem;
-  left: 18.4rem; */
